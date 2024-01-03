@@ -96,9 +96,8 @@ var totalMonths = finances.length;
 console.log("Total Months: " + finances.length);
 
 // Calculate net total amount of Profit/Losses over entire period.
-var netTotal = 0;
-
 // Reduce method 
+var netTotal = 0;
 netTotal = finances.reduce((accumulator, value) => {
 // add the second element in the array
   return accumulator + value[1];
@@ -111,7 +110,7 @@ console.log("Total: $" +  netTotal);
 // and then find the average: (Total/(Number of months - 1))
 var difference = 0;
 for (var i = 1; i < totalMonths; i++) {
-  var differences = finances[i][1] - finances[i - 1][1]; 
+  var difference = finances[i][1] - finances[i - 1][1]; 
   difference.push(difference);
 }
 
@@ -119,6 +118,7 @@ var averageChange = 0;
 averageChange = difference.reduce((accumulator, value) => {
   return accumulator + value;
 }, 0) / (totalMonths - 1);
+
 console.log("Average Change: $" + averageChange)
 
 // Calculate greatest increase in Profit/Losses
