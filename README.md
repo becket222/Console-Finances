@@ -2,7 +2,7 @@
 Challenge Week 4
 
 ## Description
-You are tasked with creating code for analyzing the financial records of a company. You have been provided with a financial dataset in the starter file.
+Create code for analyzing the financial records of a company using JavaScript. The finacial dataset has been provided in the starter file. 
 
 ## Acceptance Criteria
 Calculate each of the following:
